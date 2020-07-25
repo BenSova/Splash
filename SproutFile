@@ -1,0 +1,15 @@
+# Sprout install instructions for JohnSundell/Splash
+
+% projectname: Splash
+% giturl: https://github.com/JohnSundell/Splash
+
+% build {
+    swift build -c release
+}
+
+% install {
+    install->bin .build/release/SplashHTMLGen
+    install->bin .build/release/SplashImageGen
+    install->bin .build/release/SplashMarkdown
+    install->bin .build/release/SplashTokenizer
+}
